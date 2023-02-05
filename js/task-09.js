@@ -6,6 +6,8 @@ function getRandomHexColor() {
 }
 
 btnRef.addEventListener('click', event => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  textRef.textContent = document.body.style.backgroundColor;
+  const color = getRandomHexColor();
+
+  document.body.style.backgroundColor = color;
+  textRef.textContent = color;
 })

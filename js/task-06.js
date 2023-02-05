@@ -5,5 +5,6 @@ inputRef.addEventListener('blur', (event) => {
         inputRef.classList.remove('invalid');
         return inputRef.classList.add('valid');
      }
+     inputRef.classList.remove('valid');
      return inputRef.classList.add('invalid');
 })
